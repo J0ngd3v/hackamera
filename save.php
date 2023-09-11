@@ -1,6 +1,6 @@
 <?php
 if (isset($_FILES['image'])) {
-    $uploadDirectory = '/var/www/html/hackamera/uploads/';
+    $uploadDirectory = '/var/www/html/hackamera/uploads';
     $filename = $uploadDirectory . 'image_' . time() . '.png';
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $filename)) {
